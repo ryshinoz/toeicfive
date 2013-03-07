@@ -16,3 +16,9 @@
 - 正解した単語一覧リストは見れる
 - 単語の説明とかなし、ロングマンへのリンクだけ
 - 回答に修正はできない
+
+## Install
+
+```bash
+bundle install --path vendor/bundle
+```
