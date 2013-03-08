@@ -5,6 +5,7 @@ describe Word do
   context "aaa" do
     before do
       @words = Word.random_words
+      p @words
     end
     it do
       @words.should_not be_nil
