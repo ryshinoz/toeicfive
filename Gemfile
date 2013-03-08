@@ -36,3 +36,13 @@ gem 'jbuilder', '~> 1.0.1'
 
 # To use debugger
 # gem 'debugger'
+
+#Facebook login
+gem 'omniauth'
+gem 'omniauth-facebook'
+
+#Unit test
+group :test do
+  gem 'rspec'
+	gem 'rspec-rails'
+end

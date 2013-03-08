@@ -7,8 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <% if current_user %>
+    <img src = "<%= current_user.image_path %>" />&nbsp;&nbsp;<%= current_user.name %>
+    <%= yield %>
+  <% else %>
+    <%= link_to 'Facebookログイン', "/login" %>
+  <% end %>
 </body>
 </html>
