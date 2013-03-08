@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  japanese: MyString
+  is_complete: false
+
+two:
+  name: MyString
+  japanese: MyString
+  is_complete: false

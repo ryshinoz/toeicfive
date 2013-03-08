@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: Shinichiro
+  japanese: MyString
+  is_complete: false
+
+two:
+  name: Nakamura
+  japanese: MyString
+  is_complete: true
+  
+three:
+  name: Irokawa
+  japanese: MyString
+  is_complete: false

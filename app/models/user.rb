@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
       @user.token=auth["credentials"]["token"] 
       @user.secret=auth["credentials"]["secret"] 
     end
-    @user.save 
+    @user.save
     @user
   end
 end
