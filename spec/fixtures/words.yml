@@ -1,16 +1,108 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: Shinichiro
-  japanese: MyString
+  name: Shinichirou
+  japanese: dog
   is_complete: false
 
 two:
   name: Nakamura
-  japanese: MyString
+  japanese: fish
   is_complete: true
   
 three:
   name: Irokawa
-  japanese: MyString
+  japanese: cat
   is_complete: false
+four:
+  name: Shinozaki
+  japanese: test
+  is_complete: false
+five:
+  name: Utsui
+  japanese: sea
+  is_complete: false
+six:
+  name: miyake
+  japanese: air
+  is_complete: false
+seven:
+  name: nakamura2
+  japanese: watch
+  is_complete: false
+eight:
+  name: nakamura3
+  japanese: test2
+  is_complete: false
+nine:
+  name: nakamura4
+  japanese: test4
+  is_complete: false
+ten:
+  name: nakamura5
+  japanese: test5
+  is_complete: false
+eleven:
+  name: nakamura6
+  japanese: test6
+  is_complete: false
+test12:
+  name: nakamura7
+  japanese: test7
+  is_complete: false
+test13:
+  name: nakamura8
+  japanese: test8
+  is_complete: false
+test14:
+  name: nakamura9
+  japanese: test9
+  is_complete: false
+test15:
+  name: nakamura10
+  japanese: test10
+  is_complete: false
+test16:
+  name: nakamura11
+  japanese: test11
+  is_complete: false
+test17:
+  name: nakamura12
+  japanese: test12
+  is_complete: false
+test18:
+  name: nakamura13
+  japanese: test13
+  is_complete: false
+test19:
+  name: nakamura14
+  japanese: test14
+  is_complete: false
+test20:
+  name: nakamura15
+  japanese: test15
+  is_complete: false
+test21:
+  name: nakamura16
+  japanese: test16
+  is_complete: false
+test22:
+  name: nakamura17
+  japanese: test17
+  is_complete: false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
