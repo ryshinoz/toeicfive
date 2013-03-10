@@ -1,0 +1,11 @@
+default: &default
+  word_limit: 20
+
+
+development:
+  <<: *default
+test:
+  <<: *default
+production:
+  <<: *default
+
