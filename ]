@@ -1,0 +1,7 @@
+#coding: utf-8
+
+class Test < ActiveRecord::Base
+  has_many :words, through:test_word
+
+  validates :test_date ,presence: true, uniqueness: true
+end

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+test1:
+  examination_id: 1
+  word_id: 1
+
+test2:
+  examination_id: 1
+  word_id: 2
+
+test3:
+  examination_id: 1
+  word_id: 3
+
+

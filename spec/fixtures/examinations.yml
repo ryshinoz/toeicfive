@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  test_day: 2013-03-10
+
+two:
+  id: 2
+  test_day: 2013-03-11

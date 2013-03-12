@@ -1,5 +1,10 @@
 class Word < ActiveRecord::Base
+  has_many :examination_words
+  has_many :examinations, :through => :examination_words 
+  
   scope :not_complete,->{where('is_complete =?', false)}
+
+  validates :name ,presence:true, uniqueness:true
 
   def self.random_words
     @words = Word.not_complete
