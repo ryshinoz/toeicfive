@@ -15,7 +15,42 @@ describe Examination do
         @test.words.size.should eql(3)
       end
     end
+  end
 
+  describe "Examination data create" do
+    context "create examination normal test" do 
+      before do
+        @test = Examination.today_examination
+      end
+      it "return value not nil" do
+        @test.should_not be_nil
+      end 
+      it "words not nil" do
+        @test.words.should_not be_nil
+      end 
+      it "words size check" do
+        @test.words.size.should be_close(20,19)
+        @test.words.size.should eql(20)
+      end 
+      it "words check " do
+        @test.words.each do|w|
+          p w.name
+        end
+      end
+    end 
+    context "test_day is uniqueness. " do
+       before do
+         exam       = Examination.new
+         exam.test_day = Time.now.strftime("%Y-%m-%d")
+         exam.words = Word.random_words
+         exam.save!
+         @test = Examination.today_examination
+       end 
+       it "examination not duplication." do
+         @test.should_not be_nil
+         Examination.where("test_day = ?", Time.now.strftime("%Y-%m-%d")).count.should eql(1)
+       end
+    end
   end
 
 end
