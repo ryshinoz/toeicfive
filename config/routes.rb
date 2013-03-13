@@ -10,6 +10,10 @@ Toeicfive::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+  #error pages
+  get "error/500"
+  get "error/404"
+
   # You can have the root of your site routed with "root"
   root 'english#index'
 
@@ -54,4 +58,5 @@ Toeicfive::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  match '*a', :to => 'error#routing', :via => [:get]
 end
