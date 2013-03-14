@@ -51,3 +51,6 @@ end
 gem 'settingslogic'
 
 
+#mobile
+gem 'jpmobile'
+
