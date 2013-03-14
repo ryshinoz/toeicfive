@@ -17,3 +17,9 @@
 
 /vendor
 Gemfile.lock
+
+# for rubymine
+.idea
+sqlite-jdbc-3.7.2.jar
+xerial-sqlite-license.txt
+script
