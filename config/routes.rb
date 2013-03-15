@@ -7,12 +7,19 @@ Toeicfive::Application.routes.draw do
   post "/auth/:provider/callback" => "sessions#create"
   get "/auth/failure" => "sessions#failuer"
 
+  resources :examination do
+    collection do
+      get 'today_word'
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   #error pages
   get "error/500"
   get "error/404"
+  get "error/examination_error"
 
   # You can have the root of your site routed with "root"
   root 'english#index'

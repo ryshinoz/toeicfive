@@ -7,11 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% if current_user %>
-    <img src = "<%= current_user.image_path %>" />&nbsp;&nbsp;<%= current_user.name %>
+<% if current_user %>
+  <div class="content">
+    <div class="user_info">
+      <img src="<%= current_user.image_path %>"/>&nbsp;&nbsp;|<%= current_user.name %>
+    </div> 
+    <%= render 'common/menu' %>
     <%= yield %>
-  <% else %>
-    <%= link_to 'Facebook LOGIN', "/login" %>
-  <% end %>
+  </div>
+<% else %>
+  <%= link_to "Facebook LOGIN", "/login" %>
+<% end %>
 </body>
 </html>
+

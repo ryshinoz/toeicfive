@@ -13,7 +13,10 @@ describe Examination do
       it "words check" do
         @test.words.should_not be_nil
         @test.words.size.should eql(3)
-      end
+      end 
+#      it "exception" do
+#        lambda{Examination.today_examination}.should raise_error(Toeicfive::ExaminationError)
+#      end
     end
   end
 

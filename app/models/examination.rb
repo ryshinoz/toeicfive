@@ -1,4 +1,5 @@
 #coding: utf-8
+require 'exceptions/examination_error.rb'
 
 class Examination < ActiveRecord::Base
   has_many :examination_words
@@ -14,7 +15,8 @@ class Examination < ActiveRecord::Base
         ex.test_day = Time.now.strftime("%y-%M-%d")
       end 
     rescue 
-      logger.error "テスト作成に失敗しました"
+#      logger.error "テスト作成に失敗しました"
+      raise  Toeicfive::ExaminationError
     end
   end
 end 
