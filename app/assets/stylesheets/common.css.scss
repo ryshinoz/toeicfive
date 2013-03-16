@@ -1,0 +1,30 @@
+#menu {
+  font-size: 10pt;
+  text-align: left;
+  font-weight: bold;
+  color: #3725A8;
+  margin: 5px;
+}
+
+.content {
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  color: #3725A8;
+  width: 90%;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #333333;
+  -webkit-border-radius: 10px;/* Safari、Google Chrome */
+  -moz-border-radius: 10px;/* Firefox */
+}
+
+.user_info {
+  text-align: right;
+  font-weight: bold;
+  font-size: 10pt;
+  color: #3725A8;
+  width: 100%;
+}
+
+
