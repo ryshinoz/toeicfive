@@ -12,7 +12,8 @@ class Examination < ActiveRecord::Base
     begin
       Examination.where('test_day = ?', Time.now.strftime("%Y-%m-%d")).first_or_create do |ex|
         ex.words    = Word.random_words
-        ex.test_day = Time.now.strftime("%y-%M-%d")
+        ex.test_day = Time.now.strftime("%Y-%m-%d")
+#        ex.save
       end 
     rescue 
 #      logger.error "テスト作成に失敗しました"

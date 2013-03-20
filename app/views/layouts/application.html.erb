@@ -13,6 +13,7 @@
       <img src="<%= current_user.image_path %>"/>&nbsp;&nbsp;|<%= current_user.name %>
     </div> 
     <%= render 'common/menu' %>
+    <hr/>
     <%= yield %>
   </div>
 <% else %>

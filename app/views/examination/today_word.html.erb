@@ -1,7 +1,22 @@
-今日の英単語は？？
+今日の英単語は？？<br/>
+<div class="examination_form">
+  <%= form_tag('/examination/answer' , method:'post') do %>
+    <table class="word_list">
+      <th>I know.</th><th></th>
 <% @examination.words.each do|word| %>
-  <%=word.name %> <br/>
+      <tr>
+        <td>
+          <%= radio_button_tag :understand,"1" %>
+       </td>
+       <td>
+        <%=word.name %>
+      </td>
+    </tr>
 <% end %>
-
-
+</table>
+<div class="actions">
+  <%=submit_tag 'post!' %>
+</div>
+<% end %>
+</div>
 
