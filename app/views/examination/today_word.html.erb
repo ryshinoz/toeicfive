@@ -6,7 +6,7 @@
 <% @examination.words.each do|word| %>
       <tr>
         <td>
-          <%= radio_button_tag :understand,"1" %>
+          <%= check_box_tag 'understand[]', word.id %>
        </td>
        <td>
         <%=word.name %>
@@ -15,6 +15,7 @@
 <% end %>
 </table>
 <div class="actions">
+  <%= hidden_field_tag 'examination_id', @examination.id %>
   <%=submit_tag 'post!' %>
 </div>
 <% end %>

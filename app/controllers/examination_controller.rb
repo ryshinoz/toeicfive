@@ -6,6 +6,6 @@ class ExaminationController < ApplicationController
   end
 
   def answer
-
+    current_user.answer_examination params[:examination_id], params[:understand]
   end
 end
