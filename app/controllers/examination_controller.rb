@@ -7,5 +7,6 @@ class ExaminationController < ApplicationController
 
   def answer
     current_user.answer_examination params[:examination_id], params[:understand]
+    redirect_to action:'index', controller:'english'
   end
 end
