@@ -4,6 +4,7 @@ require 'exceptions/examination_error.rb'
 class Examination < ActiveRecord::Base
   has_many :examination_words
   has_many :words, :through =>:examination_words
+  has_one :answer
 
   validates :test_day, presence: true, uniqueness: true
 
@@ -12,7 +13,8 @@ class Examination < ActiveRecord::Base
     begin
       Examination.where('test_day = ?', Time.now.strftime("%Y-%m-%d")).first_or_create do |ex|
         ex.words    = Word.random_words
-        ex.test_day = Time.now.strftime("%y-%M-%d")
+        ex.test_day = Time.now.strftime("%Y-%m-%d")
+#        ex.save
       end 
     rescue 
 #      logger.error "テスト作成に失敗しました"

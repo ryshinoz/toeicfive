@@ -13,10 +13,13 @@
       <img src="<%= current_user.image_path %>"/>&nbsp;&nbsp;|<%= current_user.name %>
     </div> 
     <%= render 'common/menu' %>
+    <hr/>
     <%= yield %>
   </div>
 <% else %>
-  <%= link_to "Facebook LOGIN", "/login" %>
+  <div class="content">
+    <%= link_to "Facebook LOGIN and participate in toeic-five. ", "/login" %>
+  </div>
 <% end %>
 </body>
 </html>

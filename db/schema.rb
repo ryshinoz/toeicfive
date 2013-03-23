@@ -14,8 +14,9 @@
 ActiveRecord::Schema.define(version: 20130314112624) do
 
   create_table "answers", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "examination_id"
+    t.integer  "user_id",        null: false
+    t.integer  "examination_id", null: false
+    t.integer  "word_id",        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

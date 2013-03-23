@@ -12,6 +12,7 @@ Toeicfive::Application.routes.draw do
       get 'today_word'
     end
   end
+  post "/examination/answer" => "examination#answer"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

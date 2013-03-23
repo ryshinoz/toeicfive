@@ -12,4 +12,41 @@ test3:
   examination_id: 1
   word_id: 3
 
+test4:
+  examination_id: 1
+  word_id: 4
+
+test5:
+  examination_id: 1
+  word_id: 5
+
+
+test6:
+  examination_id: 1
+  word_id: 6
+
+test7:
+  examination_id: 1
+  word_id: 7
+
+test8:
+  examination_id: 1
+  word_id: 8
+
+test9:
+  examination_id: 1
+  word_id: 9
+
+test10:
+  examination_id: 1
+  word_id: 10
+
+test11:
+  examination_id: 1
+  word_id: 11
+
+
+
+
+
 
