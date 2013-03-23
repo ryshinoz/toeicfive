@@ -40,6 +40,8 @@ gem 'jbuilder', '~> 1.0.1'
 #Facebook login
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+
 
 #Unit test
 group :test do
@@ -53,4 +55,8 @@ gem 'settingslogic'
 
 #mobile
 gem 'jpmobile'
+
+#bulk insert
+gem 'activerecord-import'
+
 
