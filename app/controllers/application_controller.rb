@@ -3,7 +3,7 @@
 require 'exceptions/examination_error.rb'
 
 class ApplicationController < ActionController::Base
-#  include Jpmobile::ViewSelector
+  include Jpmobile::ViewSelector
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   # protect_from_forgery with: :exception  

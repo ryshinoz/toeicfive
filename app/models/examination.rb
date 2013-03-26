@@ -14,11 +14,9 @@ class Examination < ActiveRecord::Base
       Examination.where('test_day = ?', Time.now.strftime("%Y-%m-%d")).first_or_create do |ex|
         ex.words    = Word.random_words
         ex.test_day = Time.now.strftime("%Y-%m-%d")
-#        ex.save
       end 
     rescue 
-#      logger.error "テスト作成に失敗しました"
-      raise  Toeicfive::ExaminationError
+      raise  Toeicfive::ExaminationError "Cant not create examination."
     end
   end
 end 

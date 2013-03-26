@@ -4,14 +4,4 @@ class BaseController < ApplicationController
   # protect_from_forgery with: :null_session
   protect_from_forgery with: :exception  
 
-#  rescue_from ActiveRecord::RecordNotFound, with: :routing_error
-#  rescue_from ActionController::RoutingError, with: :routing_error
-#
-#  private
-#  def routing_error
-#    p "ROUTING ERROR"
-#    logger.error "ルーティングエラーが発生しました"
-#    render "error/404"
-#  end
-
 end

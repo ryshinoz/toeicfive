@@ -12,11 +12,8 @@ describe Examination do
       end
       it "words check" do
         @test.words.should_not be_nil
-        @test.words.size.should eql(3)
+        @test.words.size.should eql(11)
       end 
-#      it "exception" do
-#        lambda{Examination.today_examination}.should raise_error(Toeicfive::ExaminationError)
-#      end
     end
   end
 
@@ -53,7 +50,24 @@ describe Examination do
          @test.should_not be_nil
          Examination.where("test_day = ?", Time.now.strftime("%Y-%m-%d")).count.should eql(1)
        end
+    end 
+    context "error handling" do
+      it "exception" do
+        proc{
+          require 'exceptions/examination_error.rb'          
+          class TestExamination < Examination
+            def self.today_examination
+              raise Toeicfive::ExaminationError
+            end
+          end 
+          TestExamination.today_examination
+        }.should raise_error(Toeicfive::ExaminationError)
+      end
+#      it "exception" do
+#       lambda{Examination.today_examination}.should raise_error(Toeicfive::ExaminationError)
+#      end
     end
+
   end
 
 end
