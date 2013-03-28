@@ -9,14 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require error
- *= require bootstrap_and_overrides
+ *= require 'smart_phone/common'
+ *= require 'smart_phone/examination'
+ *= require 'smart_phone/english'
  */
-
-.user_info{
-  text-align: right;
-  font-weight: bold;
-  font-size: 10pt;
-  color: #3725A8;
-  width: 100%;
-}

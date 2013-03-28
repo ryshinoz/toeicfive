@@ -1,0 +1,7 @@
+<div id="user_info" class="user_info" >
+  <span>
+    <img src"<%=current_user.image_path %>" >
+   &nbsp;&nbsp;<%=current_user.name %><br/>
+   <%=link_to 'ログアウト' ,logout_path, :method=>'delete' %><br/>
+  </span>
+</div>

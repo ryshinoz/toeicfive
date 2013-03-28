@@ -1,0 +1,29 @@
+
+.user_info {
+  text-align: right;
+  font-weight: bold;
+  font-size: 10pt;
+  color: #3725A8;
+  width: 100%;
+}
+
+@mixin common_form($type) {
+  text-align: left;
+  font-weight: bold;
+  font-size: 10pt;
+  background-color: #FFFFDB;
+  border: 1px solid #333333;
+  @if $type == 1 {
+    width: 70%;
+  } @else if $type == 2 {
+    width: 50%;
+  } @else {
+    width: 30%;
+  }
+  margin: 15px;
+  padding: 10px;
+  -webkit-border-radius: 10px;/* Safari、Google Chrome */
+  -moz-border-radius: 10px;/* Firefox */
+}
+.examination_form { @include common_form(1); }
+
