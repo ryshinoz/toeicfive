@@ -16,7 +16,8 @@ module Jpmobile
         contents = File.binread template
 
         if format
-          variant = template.match(/.+#{path.to_s}(.+)\.#{format.to_sym.to_s}.*$/) ? $1 : ''
+          variant = template.match(/.+#{path.to_s}(.+)\.#{format.to_sym.to_s}.*$/) ? $1 : '' if rails4?
+          variant = template.match(/.+#{path}(.+)\.#{format.to_sym.to_s}.*$/) ? $1 : '' unless rails4?
           virtual_path = variant.blank? ? path.virtual : path.to_str + variant
         else
           virtual_path = path.virtual
@@ -28,5 +29,15 @@ module Jpmobile
           :updated_at   => mtime(template))
       }
     end 
+
+    private
+    def rails_version
+      @rails_version ||= `bundle exec rails -v`[/\d.+/]
+    end
+
+    def rails4?
+      rails_version =~ /^4/
+    end  
+   
   end
 end
