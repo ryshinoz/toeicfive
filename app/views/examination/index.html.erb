@@ -1,0 +1,11 @@
+<table >
+  <tr>
+    <th>テスト実施日 </th>
+  </tr>
+  <% @examinations.each do|ex| %>
+  <tr>
+    <td><%= link_to ex.test_day.strftime("%Y-%m%d"), action: 'show', id:ex.id %></td>
+  </tr>
+<% end %>
+</table>
+

@@ -66,4 +66,4 @@ gem "twitter-bootstrap-rails"
 
 #resque
 #gem "resque", "~> 2.0"
-
+#gem 'sidekiq'

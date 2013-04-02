@@ -2,14 +2,17 @@
 <div class="examination_form">
   <%= form_tag('/examination/answer' , method:'post') do %>
     <table class="word_list">
-      <th>I know.</th><th></th>
+      <th>I know.</th><th>mean</th><th></th>
 <% @examination.words.each do|word| %>
       <tr>
         <td>
           <%= check_box_tag 'understand[]', word.id %>
        </td>
        <td>
-        <%=word.name %>
+        <%= word.name %>
+      </td>
+      <td>
+        <%= link_to '分からなければ、こちら', word.japanese %>
       </td>
     </tr>
 <% end %>

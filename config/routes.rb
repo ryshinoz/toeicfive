@@ -1,11 +1,13 @@
 Toeicfive::Application.routes.draw do
 
-  get "english/index"
   #facebook login 
   get "/login"  => "sessions#new"
   get "/logout" => "sessions#destroy"
   post "/auth/:provider/callback" => "sessions#create"
   get "/auth/failure" => "sessions#failuer"
+
+  get "english/index"
+  #get "english/:url" => "english#hoge", :url => /http.*/ 
 
   resources :examination do
     collection do

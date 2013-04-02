@@ -1,0 +1,2 @@
+http://dev.classmethod.jp/server-side/ruby-on-rails-sidekiq/
+

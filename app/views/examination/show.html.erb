@@ -1,0 +1,13 @@
+<div class="examination_words_list" >
+<% @examination.words.each do|w| %>
+  &nbsp;[<%= w.name %>]&nbsp;
+<% end %>
+</div>
+<hr/>
+<div class="answer_words_list"> 
+覚えた単語<br/>
+<% @answer.each do|w| %>
+  &nbsp;[<%= w.word.name %>]&nbsp;
+<% end %>
+</div>
+
