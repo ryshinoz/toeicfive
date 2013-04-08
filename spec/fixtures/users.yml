@@ -9,4 +9,9 @@ one:
   name: 'test_taro'
   uid: 'aabbcc1122'
   provider: 'facebook'
+one:
+  id: 2
+  name: 'test_hoge'
+  uid: 'aabbcc1133'
+  provider: 'facebook'
 

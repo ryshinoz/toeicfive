@@ -36,7 +36,7 @@ class User < ActiveRecord::Base
 #      CompleteCheckWorker.perform_async
 #      resque = Resque.new
 #      resque << CompleteCheckWorker.new
-      user_count = User.count #取りあえず全ユーザが全て正解してないと駄目とする。groupの設定とか入れる？？？
+      user_count = User.all.count #取りあえず全ユーザが全て正解してないと駄目とする。groupの設定とか入れる？？？
       @worker = CompleteCheckWorker.new
       @worker.work word_ids, user_count
     end

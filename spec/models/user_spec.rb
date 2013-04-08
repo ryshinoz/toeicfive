@@ -58,7 +58,27 @@ describe User do
         @user.answers.should_not be_nil
         @user.answers.where('examination_id = ?',@examination.id).should_not be_nil
         @user.answers.where('examination_id = ?',@examination.id).size.should eql(6)
+      end 
+      it "word status check" do
+        @examination = Examination.find(@examination.id)
+        exam_words = @examination.words
+        exam_words.each do |w|
+          p w.is_complete
+        end
+        word = Word.find(1)
+        word.is_complete.should be_false
+        word = Word.find(2)
+        word.is_complete.should be_true
+        word = Word.find(3)
+        word.is_complete.should be_false
+        word = Word.find(4)
+        word.is_complete.should be_false
+        word = Word.find(5)
+        word.is_complete.should be_false
+        word = Word.find(6)
+        word.is_complete.should be_false
       end
     end
   end
+
 end
