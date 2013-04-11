@@ -12,14 +12,14 @@
         <%= word.name %>
       </td>
       <td>
-        <%= link_to '分からなければ、こちら', word.japanese %>
+        <%= link_to '分からなければ、こちら', word.dictionary_url %>
       </td>
     </tr>
 <% end %>
 </table>
 <div class="actions">
   <%= hidden_field_tag 'examination_id', @examination.id %>
-  <%=submit_tag 'post!' %>
+  <%=submit_tag 'send my answer!' %>
 </div>
 <% end %>
 </div>

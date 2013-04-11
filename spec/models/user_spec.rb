@@ -4,6 +4,8 @@ describe User do
   fixtures :users
   fixtures :examinations
   fixtures :words
+  fixtures :groups
+  fixtures :user_groups
 
   describe "create_facebook_account  method test" do
     context "check account" do
@@ -26,7 +28,6 @@ describe User do
         @user.should_not be_nil
         @user.uid.should eql(@user.uid)
       end
-
     end
   end 
 
@@ -79,6 +80,23 @@ describe User do
         word.is_complete.should be_false
       end
     end
+  end
+
+  describe 'user group test' do
+    before do
+      @user = User.find(1)
+    end 
+    it "group data is not nil" do
+      @user.should_not be_nil
+      @user.groups.should_not be_nil
+    end 
+    it "group size check" do
+      @user.groups.size.should eql(1)
+    end
+    it "group member size check" do
+      @user.groups[0].users.size.should eql(3)
+    end
+
   end
 
 end

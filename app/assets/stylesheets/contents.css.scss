@@ -1,0 +1,40 @@
+.user_info{
+  text-align: right;
+  font-weight: bold;
+  font-size: 10pt;
+  color: #3725A8;
+  width: 100%;
+}
+
+.examination_words_list {
+  text-align: left;
+  font-weight: bold;
+  background-color: #ff0000; 
+  font-size: 10.5pt;
+  color: #3725A8;
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #333333;
+  -webkit-border-radius: 10px;/* Safari、Google Chrome */
+  -moz-border-radius: 10px;/* Firefox */
+
+}
+.answer_words_list {
+  text-align: left;
+  font-weight: bold;
+  font-size: 11pt;
+  color: #3725A8;
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #333333;
+  -webkit-border-radius: 10px;/* Safari、Google Chrome */
+  -moz-border-radius: 10px;/* Firefox */
+
+}
+
+
+

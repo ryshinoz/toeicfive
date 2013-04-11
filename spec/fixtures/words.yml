@@ -3,115 +3,115 @@
 one:
   id: 1
   name: Shinichirou
-  japanese: dog
+  dictionary_url: dog
   is_complete: false
 
 two:
   id: 2
   name: Nakamura
-  japanese: fish
+  dictionary_url: fish
   is_complete: true
   
 three:
   id: 3
   name: Irokawa
-  japanese: cat
+  dictionary_url: cat
   is_complete: false
 four:
   id: 4
   name: Shinozaki
-  japanese: test
+  dictionary_url: test
   is_complete: false
 five:
   id: 5
   name: Utsui
-  japanese: sea
+  dictionary_url: sea
   is_complete: false
 six:
   id: 6
   name: miyake
-  japanese: air
+  dictionary_url: air
   is_complete: false
 seven:
   id: 7
   name: nakamura2
-  japanese: watch
+  dictionary_url: watch
   is_complete: false
 eight:
   id: 8
   name: nakamura3
-  japanese: test2
+  dictionary_url: test2
   is_complete: false
 nine:
   id: 9
   name: nakamura4
-  japanese: test4
+  dictionary_url: test4
   is_complete: false
 ten:
   id: 10
   name: nakamura5
-  japanese: test5
+  dictionary_url: test5
   is_complete: false
 eleven:
   id: 11
   name: nakamura6
-  japanese: test6
+  dictionary_url: test6
   is_complete: false
 test12:
   id: 12
   name: nakamura7
-  japanese: test7
+  dictionary_url: test7
   is_complete: false
 test13:
   id: 13
   name: nakamura8
-  japanese: test8
+  dictionary_url: test8
   is_complete: false
 test14:
   id: 14
   name: nakamura9
-  japanese: test9
+  dictionary_url: test9
   is_complete: false
 test15:
   id: 15
   name: nakamura10
-  japanese: test10
+  dictionary_url: test10
   is_complete: false
 test16:
   id: 16
   name: nakamura11
-  japanese: test11
+  dictionary_url: test11
   is_complete: false
 test17:
   id: 17
   name: nakamura12
-  japanese: test12
+  dictionary_url: test12
   is_complete: false
 test18:
   id: 18
   name: nakamura13
-  japanese: test13
+  dictionary_url: test13
   is_complete: false
 test19:
   id: 19
   name: nakamura14
-  japanese: test14
+  dictionary_url: test14
   is_complete: false
 test20:
   id: 20
   name: nakamura15
-  japanese: test15
+  dictionary_url: test15
   is_complete: false
 test21:
   id: 21
   name: nakamura15
   name: nakamura16
-  japanese: test16
+  dictionary_url: test16
   is_complete: false
 test22:
   id: 22
   name: nakamura17
-  japanese: test17
+  dictionary_url: test17
   is_complete: false
 
 
