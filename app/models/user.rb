@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   
   has_many :answers
   has_many :user_groups
-  has_many :groups, :through => :user_groups
+  has_many :groups, through: :user_groups
 
 
   def self.create_facebook_account(auth)
